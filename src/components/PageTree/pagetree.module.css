@@ -1,0 +1,23 @@
+.pageTreeContainer ul {
+    margin: 0 0.5rem;
+}
+.pageTreeContainer li {
+    list-style-type: disc;
+    margin: 0 1rem;
+}
+.parentItem {
+    list-style-type: none!important;
+    margin: 1rem;
+}
+.parentItem::before {
+    content: "▼";
+    font-size: 12px;
+}
+.parentItem.collapsed::before {
+    content: "▶";
+    font-size: 12px;
+}
+
+.parentItem.collapsed ul {
+    display: none;
+}
